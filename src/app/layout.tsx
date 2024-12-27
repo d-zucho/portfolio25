@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import BgGradient from '@/components/BgGradient'
-import Header from '@/components/Header'
+import Header from '@/sections/Header'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${inter.className}antialiased relative overflow-hidden`}
       >
-        <BgGradient className='w-fit h-fit absolute top-0 left-1/2 -translate-x-1/2' />
+        <BgGradient className='z-0' />
         <Header />
 
         {children}

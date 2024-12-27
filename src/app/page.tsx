@@ -1,4 +1,4 @@
-import Header from '@/components/Header'
+import Header from '@/sections/Header'
 
 export default function Home() {
   return (
@@ -7,7 +7,6 @@ export default function Home() {
   '
     >
       {/* <BgGradient className='w-fit h-fit absolute top-0 left-1/2 -translate-x-1/2' /> */}
-      <Header />
     </div>
   )
 }
