@@ -4,9 +4,9 @@ import './globals.css'
 import BgGradient from '@/components/BgGradient'
 import Header from '@/components/Header'
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '600', '700', '800'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
