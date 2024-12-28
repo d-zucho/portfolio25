@@ -24,7 +24,8 @@ export default function RootLayout({
       <body
         className={`${inter.className}antialiased relative overflow-hidden`}
       >
-        <BgGradient className='z-0' />
+        <BgGradient className='-right-1/2 -translate-x-1/3' />
+
         <Header />
 
         {children}
