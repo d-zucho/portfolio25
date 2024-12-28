@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'
 import './globals.css'
 import BgGradient from '@/components/BgGradient'
 import Header from '@/sections/Header'
@@ -7,6 +7,12 @@ import Header from '@/sections/Header'
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
 })
 
 export const metadata: Metadata = {
@@ -22,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className}antialiased relative overflow-hidden`}
+        className={`${inter.className} ${montserrat.className} antialiased relative overflow-hidden`}
       >
         <BgGradient className='-right-1/2 -translate-x-1/3' />
 

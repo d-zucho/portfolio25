@@ -10,11 +10,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         'my-bg': 'var(--my-bg)',
         'my-blue': 'rgba(63, 100, 234, 0.4)',
         'my-red': 'rgba(233, 63, 64, 0.4)',
         'my-yellow': 'rgba(255, 184, 0, 0.4)',
+        'my-dark-gray': '#808080',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
